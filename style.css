@@ -1,1 +1,42 @@
 /* Placeholder file while building site */
+:root {
+    --color_1: #3D5A80;
+    --color_2: #98C1D9;
+    --color_3: #E0FBFC;
+    --color_4: #EE6C4D;
+    --color_5: #293241;
+}
+
+body {
+    background-color: var(--color_2);
+    color: white;
+}
+
+nav.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color_5);
+}
+
+nav > ul > li {
+    margin: 1em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--color_4)
+}
+
+nav > ul li ul {
+    display: none;
+}
+
+nav > ul li:hover ul {
+    display: block;
+}

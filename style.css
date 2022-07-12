@@ -1,42 +1,68 @@
-/* Placeholder file while building site */
 :root {
     --color_1: #3D5A80;
+    --color_1_dark: #2a3d53;
     --color_2: #98C1D9;
     --color_3: #E0FBFC;
-    --color_4: #EE6C4D;
+    --color_4: #db352f;
     --color_5: #293241;
 }
 
 body {
     background-color: var(--color_2);
-    color: white;
+    color: var(--color_5);
 }
 
-nav.flex-container {
-    display: flex;
-    flex-direction: row;
-}
-
-nav > ul {
+/* Create nav menu */
+nav>ul {
+    background-color: var(--color_1);
+    color: var(--color_3);
     list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    background-color: var(--color_5);
 }
 
-nav > ul > li {
-    margin: 1em;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: var(--color_4)
-}
-
-nav > ul li ul {
-    display: none;
-}
-
-nav > ul li:hover ul {
+.navlink {
     display: block;
+    text-decoration: none;
+    color: var(--color_3);
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+#project_dropdown:hover #nav_supermenu {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav_supermenu {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background-color: var(--color_1);
+    min-width: 4rem;
+    z-index: 1;
+}
+
+.nav_super {
+    text-decoration: none;
+    color: var(--color_3);
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+.nav_super:hover {
+    background-color: var(--color_1_dark);
+}
+
+.navlink:link, .navlink:visited  {
+    
+}
+
+.navlink:hover, #project_dropdown:hover {
+    background-color: var(--color_4);
+}
+
+.navlink:active{
+    
 }

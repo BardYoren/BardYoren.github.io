@@ -13,25 +13,21 @@
     </head>
 
     <body>
-        <header>BardYoren Homepage</header>
-
         <!-- Create nav menu -->
-        <nav class="flex-container">
+        <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="has-submenu">
-                    <a href="" aria-expanded="false">
-                        Projects
-                    </a>
-                    <ul>
-                        <li><a href="project_1.html">Project 1</a></li>
-                        <li><a href="project_2.html">Project 2</a></li>
-                        <li><a href="project_3.html">Project 3</a></li>
-                        <li><a href="project_4.html">Project 4</a></li>
-                        <li><a href="project_5.html">Project 5</a></li>
-                    </ul>
+                <li><a href="index.html" class="navlink">Home</a></li>
+                <li id="project_dropdown">
+                    <a href ="javascript:void(0)" class="navlink">Projects</a>
+                    <div id="nav_supermenu">
+                        <a href="project_1.html" class="nav_super">Project 1</a>
+                        <a href="project_2.html" class="nav_super">Project 2</a>
+                        <a href="project_3.html" class="nav_super">Project 3</a>
+                        <a href="project_4.html" class="nav_super">Project 4</a>
+                        <a href="project_5.html" class="nav_super">Project 5</a>
+                    </div>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="navlink">Contact</a></li>
             </ul>
         </nav>
         <h1>PLACEHOLDER</h1>

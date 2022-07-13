@@ -1,3 +1,4 @@
+/* Stylesheet for desktops and large screens */
 :root {
     --color_1: #3D5A80;
     --color_1_dark: #2a3d53;
@@ -5,6 +6,7 @@
     --color_3: #E0FBFC;
     --color_4: #db352f;
     --color_5: #293241;
+    --color_6: #13a113;
 }
 
 body {
@@ -12,7 +14,7 @@ body {
     color: var(--color_5);
 }
 
-/* Create nav menu */
+/* Nav menu */
 nav>ul {
     background-color: var(--color_1);
     color: var(--color_3);
@@ -30,6 +32,10 @@ nav>ul {
     padding: 0.5rem 1rem;
 }
 
+.active_page {
+    background-color: var(--color_6);
+}
+
 #project_dropdown:hover #nav_supermenu {
     display: flex;
     flex-direction: column;
@@ -40,7 +46,7 @@ nav>ul {
     list-style-type: none;
     position: absolute;
     background-color: var(--color_1);
-    min-width: 4rem;
+    min-width: 8rem;
     z-index: 1;
 }
 
@@ -55,14 +61,6 @@ nav>ul {
     background-color: var(--color_1_dark);
 }
 
-.navlink:link, .navlink:visited  {
-    
-}
-
-.navlink:hover, #project_dropdown:hover {
+.navlink:not(.active_page):hover, #project_dropdown:hover {
     background-color: var(--color_4);
-}
-
-.navlink:active{
-    
 }

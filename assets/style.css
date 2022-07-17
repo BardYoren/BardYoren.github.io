@@ -14,6 +14,8 @@ body {
     color: var(--color_5);
 }
 
+/* Desktop Style */
+
 /* Nav menu */
 nav>ul {
     background-color: var(--color_1);
@@ -36,12 +38,12 @@ nav>ul {
     background-color: var(--color_6);
 }
 
-#project_dropdown:hover #nav_supermenu {
+.project_dropdown:hover .nav_supermenu {
     display: flex;
     flex-direction: column;
 }
 
-#nav_supermenu {
+.nav_supermenu {
     display: none;
     list-style-type: none;
     position: absolute;
@@ -61,6 +63,25 @@ nav>ul {
     background-color: var(--color_1_dark);
 }
 
-.navlink:not(.active_page):hover, #project_dropdown:hover {
+.navlink:not(.active_page):hover, .project_dropdown:hover {
     background-color: var(--color_4);
 }
+
+.icon {
+    display: none;
+}
+
+/* Mobile Style */
+@media screen and (max-width: 640px) {
+
+    /* Nav menu */
+    nav>ul {
+        background-color: var(--color_1);
+        color: var(--color_3);
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+}
+

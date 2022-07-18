@@ -45,7 +45,7 @@ nav>h1 {
   font-size: 2rem;
 }
 
-.nav_menu {
+.nav-menu {
   display: flex;
   flex: 0 0 30%;
   justify-content: space-between;
@@ -63,16 +63,50 @@ nav>h1 {
   background-color: var(--color_5);
 }
 
-.projects_supermenu {
+.projects-supermenu {
   display: none;
   position: absolute;
 }
 
-.project_links:hover .projects_supermenu {
+.project-links:hover .projects-supermenu {
   display: block;
   border-radius: 5px;
 }
 
-.hamburger_menu {
+.hamburger-menu {
   display: none;
+}
+
+/* About Me section */
+.about-me {
+
+}
+
+/* Skills and Tools section */
+.skills>h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills-and-tools-icons {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-and-tools-icons li {
+  flex: 0 1 20%;
+  border: thin solid black;
+  border-radius: 5px;
+  margin: 1rem;
+  box-shadow: 0 5px 5px 0;
+}
+
+.skills-and-tools-icons img {
+  width: 80%;
+  height: 80%;
 }

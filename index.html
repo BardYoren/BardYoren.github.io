@@ -8,7 +8,7 @@
   <meta name="description" content="Homepage for JohnCBMeyer.github.io">
 
   <!-- CSS styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Icon library for mobile nav menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,33 +19,64 @@
 <body>
   <!-- Nav menu -->
   <nav>
-    <ul>
-      <li>
-        <a href="#home" class="">Home</a>
+    <h1>John Meyer</h1>
+    <ul class="nav_menu">
+      <li><a href="index.html" class="navlink">Home</a></li>
+      <li class="project_links">
+        <a href="projects.html" class="navlink">Projects</a>
+        <ul class="projects_supermenu">
+          <li><a href="#project_1" class="navlink project_link">Placeholder</a></li>
+          <li><a href="#project_2" class="navlink project_link">Placeholder</a></li>
+          <li><a href="#project_3" class="navlink project_link">Placeholder</a></li>
+          <li><a href="#project_4" class="navlink project_link">Placeholder</a></li>
+          <li><a href="#project_5" class="navlink project_link">Placeholder</a></li>
+        </ul>
       </li>
-      <li>
-        <a href="#projects">Projects</a>
-        <div>
-          <a href="#project_1">Placeholder</a>
-          <a href="#project_2">Placeholder</a>
-          <a href="#project_3">Placeholder</a>
-          <a href="#project_4">Placeholder</a>
-          <a href="#project_5">Placeholder</a>
-        </div>
-      </li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="contac.html" class="navlink">Contact</a></li>
     </ul>
     <button class="hamburger_menu" id="hamburger_menu">
-      <ion-icon class="bars" name="menu_outline"></ion-icon>
+      <img src="assets/icons/hamburger_menu.svg">
     </button>
   </nav>
+
+  <!-- About Me section -->
+  <section class="about_me" id="about_me">
+    <h2>About Me</h2>
+    <!-- ADD PICTURE OF MY FACE -->
+    <p>A PROFESSIONAL DESCRIPTION</p>
+  </section>
 
   <!-- Skills section -->
   <section class="skills" id="skills">
     <h2>Skills and Tools</h2>
 
-    
+    <ul class="skills_and_tools_icons">
+      <li><img src="assets/icons/r_icon.svg" alt="R logo."></li>
+      <li><img src="assets/icons/python_icon.svg" alt="Python logo."></li>
+      <li><img src="assets/icons/postgres_icon.svg" alt="PostgreSQL logo."></li>
+      <li><img src="assets/icons/mysql_icon.svg" alt="MySQL logo."></li>
+      <li><img src="assets/icons/git_icon.svg" alt="Git logo."></li>
+      <li><img src="assets/icons/html5_icon.svg" alt="HTML5 logo."></li>
+      <li><img src="assets/icons/css3_icon.svg" alt="CSS3 logo."></li>
+      <li><img src="assets/icons/js_icon.svg" alt="JavaScript logo."></li>
+    </ul>
   </section>
+
+  <!-- Projects section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <h3>
+      Projects I've worked on and the skills I used. Full descriptions can be
+      found on each project's page.
+    </h3>
+  </section>
+
+  <footer>
+    <!-- Add link to Icons8 -->
+  </footer>
+
+  <!-- JS link -->
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -8,9 +8,11 @@
   --color_4: darkblue;
   --color_5: green;
   --color_6: skyblue;
+  --color-7: purple;
   --font_family: "Roboto", sans-serif;
 }
 
+/* Baseline */
 * {
   background-color: transparent;
   text-decoration: none;
@@ -25,7 +27,15 @@ body {
   background-image: linear-gradient(var(--color_6), var(--color_1));
 }
 
-/* Desktop style */
+a:link:not(.navlink), a:active:not(.navlink), a:visited:not(.navlink) {
+  color: var(--color_5);
+}
+
+a:hover {
+  color: var(--color_1);
+}
+
+/* DESKTOP STYLE */
 h2 {
   text-align: center;
   padding: 0.5rem;
@@ -106,6 +116,7 @@ nav>h1 {
 .about-me img {
   border-radius: 50%;
   padding: 1rem;
+  flex: 0 1 20%;
 }
 
 .about-me p {
@@ -140,4 +151,31 @@ nav>h1 {
 .skills-and-tools-icons img {
   width: 80%;
   height: 80%;
+}
+
+/* Projects section */
+.projects {
+  text-align: center;
+}
+
+.projects>h3 {
+  font-weight: lighter;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-7);
+  background-image: linear-gradient(to right, var(--color_4), var(--color-7));
+  color: var(--color_1);
+  text-align: left;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.footer a {
+  color: var(--color_1);
+}
+
+.footer a:hover {
+  color: var(--color_1);
 }
